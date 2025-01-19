@@ -68,7 +68,7 @@ Proyek ini dikerjakan oleh kelompok dengan anggota:
 ### **Output**
 - Password berhasil ditemukan: `fathir`.
 - Jumlah percobaan yang dilakukan: **59.745.782 percobaan**.
-- Waktu yang diperlukan: **13,76 detik**.
+- Waktu yang diperlukan: **12,16 detik**.
 
 ---
 
