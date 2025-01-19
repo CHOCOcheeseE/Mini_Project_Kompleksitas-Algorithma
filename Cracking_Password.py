@@ -52,7 +52,7 @@ def brute_force_password_cracking(target_password):
 # Contoh
 if __name__ == "__main__":
     # Target password
-    target_password = "adeliasabira"
+    target_password = "fathir"
 
     # Memulai proses brute force
     cracked_password, attempts, elapsed_time = brute_force_password_cracking(target_password)
