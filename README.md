@@ -8,7 +8,7 @@ Proyek ini dibuat sebagai bagian dari mini project untuk mata kuliah **Kompleksi
 Proyek ini dikerjakan oleh kelompok dengan anggota:
 - Raffi Putra
 - Alfredo Alin Kambu
-- Siti Fauziyah
+- Siti Fauzziyah
 - Adelia Sabira
 - Muhammad Fathir Bagas
 
