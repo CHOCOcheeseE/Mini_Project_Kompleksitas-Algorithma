@@ -112,6 +112,45 @@ Proyek ini dikerjakan oleh kelompok dengan anggota:
 
 ---
 
+## **Implementasi Program**
+
+Berikut adalah kode Python untuk implementasi metode brute force dalam memecahkan password:
+
+```python
+import itertools
+import string
+import time
+
+def brute_force_crack(target_password):
+    charset = string.ascii_letters + string.digits + string.punctuation
+    start_time = time.time()
+
+    for password_length in range(1, 9):  # Panjang password hingga 8 karakter
+        for attempt in itertools.product(charset, repeat=password_length):
+            attempt = ''.join(attempt)
+            if attempt == target_password:
+                elapsed_time = time.time() - start_time
+                return attempt, elapsed_time
+
+    return None, None
+
+if __name__ == "__main__":
+    target_password = input("Masukkan password yang ingin dipecahkan: ")
+    if len(target_password) > 8:
+        print("Password terlalu panjang! Maksimal panjang password adalah 8 karakter.")
+    else:
+        print("Memulai proses brute force...")
+        result, time_taken = brute_force_crack(target_password)
+
+        if result:
+            print(f"Password ditemukan: {result}")
+            print(f"Waktu yang dibutuhkan: {time_taken:.2f} detik")
+        else:
+            print("Password tidak ditemukan.")
+```
+
+---
+
 ## **Pengembangan Selanjutnya**
 1. **Optimasi Performa:**
    - Gunakan paralelisme dengan pustaka seperti `multiprocessing` untuk mencoba kombinasi secara paralel.
